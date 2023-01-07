@@ -1,0 +1,96 @@
+{
+  "id": "57f14828-3f7a-4b0f-bb7c-638b12d83ddc",
+  "version": "2.0",
+  "name": "Devops.Final.Project",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "44a53664-002b-4ba4-bacb-14742fdab6b6",
+    "name": "Untitled",
+    "commands": [{
+      "id": "a40f9b3c-f820-464a-8f3b-8b3c58291286",
+      "comment": "",
+      "command": "open",
+      "target": "/Mor_Mayan_Ofir_Igal_Igor/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ba9fc54-d9d6-4a59-9868-df3b9993cb9a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Try Again')]", "xpath:innerText"]
+      ],
+      "value": "Try Again"
+    }, {
+      "id": "e3a89d08-3874-4bb7-b2ad-d075423eb5a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Try Again')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7455c73b-1e6b-4fba-8064-1c8232ce8b1e",
+      "comment": "",
+      "command": "if",
+      "target": "window.document.getElementById(\"num_value\").textContent > '(0.5'",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'(0.2695080065602621)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09e970bf-e7b2-46ab-9902-0d7f1303c6cf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [],
+      "value": "You'll have a luck day!"
+    }, {
+      "id": "966755af-5ff2-40b0-99e3-e853eae8660e",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "812ba638-6d09-42f0-9ed8-f1785097e49c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [],
+      "value": "Well, life goes on ..."
+    }, {
+      "id": "f17b1f0c-81bf-4736-a587-f0e147416f36",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab4c7a16-45aa-4336-89ca-1e786699febd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "33d24ac0-d820-45c6-be34-ce74a89683a4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["44a53664-002b-4ba4-bacb-14742fdab6b6"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
