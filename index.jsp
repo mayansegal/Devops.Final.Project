@@ -5,7 +5,7 @@
     double num = Math.random();
     if (num > 0.5) {
   %>
-      <h2 id="text_res">You'l have a lucky day!!</h2><p id="num_value">(<%= num %>)</p>
+      <h2 id="text_res">You'll have a lucky day!!</h2><p id="num_value">(<%= num %>)</p>
   <%
     } else {
   %>
@@ -13,6 +13,6 @@
   <%
     }
   %>
-  <a href="<%= request.getRequestURI() %>"><h3 id="try_button">Try Again</h3></a>
+  <a href="<%= request.getRequestURI() %>"><h3 id="try_button">Tryy Again</h3></a>
 </body>
 </html>
